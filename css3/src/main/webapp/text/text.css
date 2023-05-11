@@ -1,0 +1,156 @@
+@charset "UTF-8";
+
+ /* 1. text-align 글자수평정렬 */
+   /* 
+ .ta01, .ta02, .ta03, .ta04 {
+ A, B, C, ... 는 그룹선택자
+ 여러 요소에 동시에 같은 스타일 적용 	
+}
+ */
+#sec01>p {
+ /* 1. 관계선택자 A>B는 
+상위요소A의 바로 아래(안)에 있는 하위요소B를
+지정하는 부모자식 선택자 */
+
+ /* 2. 관계선택자 A B는 
+상위요소A의 아래(안)에 있는 하위요소B를
+지정하는 조상자손 선택자 */
+	border: 1px solid;
+	width: 400px; } 
+ 
+.ta01 {text-align: left;}
+.ta02 {text-align: center;}
+.ta03 {text-align: right;}
+.ta04 {text-align: justify;}
+
+#tb {width: 500px;
+height: 100px;}
+
+#tb, #tb th, #tb td {
+border: 1px solid;	} 
+
+#tb th {font-weight: normal;}
+
+
+
+
+
+ /* 2. text-decoration 글자의 줄들 */
+.td01 {text-decoration: overline;}
+.td02 {text-decoration: line-through;}
+.td03 {text-decoration: underline;}
+ 
+.td04>a {text-decoration: none; }
+
+
+
+.ex01 {
+text-decoration:line-through;
+color: #999;} 
+
+.ex02 {
+background-color: #f00;
+border-radius:50%
+/* 모서리 라운딩 */;
+padding:1px 3px;
+vertical-align:10px
+ /* 한 줄에 나란히 오는 요소들끼리 
+ 수직정렬 위치 지정. 음수값 가능
+ (super는 sup태그와 유사 
+ sub는 sub태그와 유사)
+ */ ; 
+font-size: 0.5em;
+font-family:cursive;
+text-transform:capitalize;
+color: #fff;	}
+
+
+/* .ex>sup {
+background-color: #f00;
+border-radius:50%;
+padding:2px 3px;
+font-family:cursive;	
+color: #fff;	} */
+
+.ex>b {font-size:1.5em;
+color: #f00; }
+
+
+ /* 3.text-indent 들여쓰기 */
+#sec03>p {border: 1px solid;}
+
+.ti01 {text-indent: 10px;}
+.ti02 {text-indent: 1em; }
+.ti03 {text-indent: 10%;}
+.ti04 {text-indent: -100px; }
+
+
+ /* 4. text-transform 대소문자 변형 */
+.tt01 {text-transform: none;}
+.tt02 {text-transform: lowercase;}
+.tt03 {text-transform: uppercase;}
+.tt04 {text-transform: capitalize;}
+
+
+ /* 5.text-shadow 글자의 그림자 */
+.txt {
+ white-space: pre
+/* 공백처리를 pre태그처럼 소스 그대로 */;	
+}
+
+#sec05>p {
+ font-size: 50px;
+ font-weight: bold;	
+ text-align: center;}
+
+.ts01 {text-shadow: 2px 3px 4px #333; }
+
+.ts01-1 {text-shadow:0 50px 0 #348; }
+
+.ts02 {text-shadow: -2px -3px 4px #333;}
+
+.ts02-1 {text-shadow: -2px -3px 4px #333;}
+
+.ts02-1:hover {
+text-shadow: 8px 3px 6px #333;
+color: #222; 
+transition:1.5s;}
+
+.ts03 {text-shadow: 2px 3px 4px #333;
+color: #fff; }
+
+.ts03:hover {/* 상태선택자 A:hover는
+ 요소A에 마우스를 올린 상태일 때 적용됨 */
+ text-shadow: 0 0 0 #fff;}
+
+.ts04, .ts04-1, .ts05, .ts06 {
+background-color: #000;
+padding: 20px;}
+
+.ts04 {text-shadow: 0 0 30px #1effab; }
+
+.ts05:hover {
+text-shadow: 0 0 20px #f0f; 
+transition:1.5s;}
+
+.ts06 {text-shadow:
+ -2px -2px 2px #f0f , 2px 2px 2px #08f;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

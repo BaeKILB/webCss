@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Margin</title>
+<link href="../style.css" rel="styleSheet">
+<link href="margin.css" rel="styleSheet">
+</head>
+<body>
+	<h1>margin 요소의 내부 여백</h1>
+
+	<h2>1. margin 방향별 저장법</h2>
+	<ul id="mg01">
+		<li class="mt">margin-top:n ; 위에만 n 적용</li>
+		<li class="mr">margin-right: n; 우측에만 n 적용</li>
+		<li class="mb">margin-bottom:n ; 아래에만 n 적용</li>
+		<li class="ml">margin-left:n ; 좌측에만 n 적용</li>
+	</ul>
+
+	<h2>2. margin 값 갯수별 저장법</h2>
+	<ul id="mg02">
+		<li class="mgn01">margin: 5em; 양 사방 같은 값으로 동일하게 적용</li>
+		<li class="mgn02">margin: 5em 10%; 상하, 좌우 서로 같은 값으로 </li>
+		<li class="mgn03">margin: 5em 10% 2em; 상,좌우, 하 순서</li>
+		<li class="mgn04">margin: 1em 10% 2em 30%;상,우,하,좌 순서로 각각 적용</li>
+	</ul>
+	
+	<p class="cnt">[center] <br>
+	항상 화면 정 중앙에 있는 요소 지정 <br>
+	margin : 1.5em <b>auto</b>; 좌우여백을 <b>항상 같게</b> <br>
+	</p>
+	
+	<p id="in">
+	<b>b tag</b>
+	<a href="#">a tag</a> <br>
+	크기 적용 상하 바깥 여백 적용 불가
+	</p>
+	
+	<form action="#">
+		<label for="nm">name</label>
+		<input type="text" id="nm"> <br>
+		<button>ok</button>
+	</form>
+	</body>
+</html>

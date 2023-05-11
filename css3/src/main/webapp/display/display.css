@@ -1,0 +1,115 @@
+@charset "UTF-8";
+nav ul{
+	border: 1px solid #0f0;	
+}
+nav li{
+	border: 1px solid red;	
+	display : inline-block;
+	vertical-align: top;
+}
+nav a{
+	border: 1px solid;	
+	text-decoration: none;
+}
+.b01{
+	display:none;
+}
+
+.ul01:hover .b01{
+	display:inline;
+}
+
+#sub {
+	display:none;
+}
+
+#nm03:hover ~#sub{
+	display:block;
+}
+
+#sec01, #sec02 {
+	width: 35%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#sec01>*:not(h2) {
+	border: 1px solid;
+	width: 100px;
+	display: inline;
+}
+
+#sec02>*:not(h2) {
+	border: 1px solid;
+	width: 100px;
+	height: 100px;
+	display: block;
+}
+
+#sec03>*:not(h2) {
+	border: 1px solid;
+	width: 100px;
+	height: 50px;
+	margin: 20px;
+	display: inline-block;
+}
+
+.dn02 {
+	background-color: #48f;
+	display: none;
+}
+
+#sec04>*:not(h2) {
+	border: 2px solid;
+}
+
+h2>i {
+	background-color: "#aea";
+	font-size: 0.8rem;
+	font-style: nomal;
+	margin-right: 12px;
+}
+
+#sec04>.dn02 {
+	display: none;
+}
+
+#sec04:hover>.dn02 {
+	display: block;
+}
+
+article:hover {
+	color: #00c;
+}
+
+article:hover ~.dn04 {
+	/* 		~ 는 형제 선택자 */
+	display: none;
+}
+
+article:hover+.dn03 {
+	/* 		+ 는 인접 형제 선택자(해당 요소 바로 뒤)  */
+	display: none;
+}
+
+#sec05>*:not(h2) {
+	border: 2px dashed #ccc;
+}
+
+.vh01 {
+	background-color: #ff0;
+	visibility: hidden;
+}
+
+#sec05:hover>.vh01 {
+	visibility: visible;
+}
+
+#sec05:hover>.vh02 {
+	visibility: hidden;
+}
+
+#sec04, #sec05{
+		display: inline-block;
+		vertical-align: top;
+}

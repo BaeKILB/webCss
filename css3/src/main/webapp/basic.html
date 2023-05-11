@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>css basic</title>
+<link href="basic.css" rel="stylesheet"/>
+<style type="text/css">
+h1 {
+	border-left: 12px solid cyan;
+	background-color: #3af;
+	padding-left: 12px; 
+	padding-right: 12px;
+	text-transform : capitalize;
+	color: #fff;
+	text-transform: capitalize
+}
+
+h2 {
+	color: #137;
+}
+
+header {
+	padding-left: 12px; 
+	padding-right: 12px;
+}
+
+#syn { background-color: #eee;
+	margin: 1.5em;
+	width: 200px;
+	padding: 0.5em 1em 1.2em;
+	font-size: 1.2em;
+}
+
+.nv { color: #137;
+	
+}
+
+.bg-bl {background-color: #36e;}
+</style>
+</head>
+<body>
+<header>
+	<h1>css basic</h1>
+	요소 () 가 화면에 나타나는 방식을 스타일 하는 언어
+</header>
+
+	<div id="syn">
+		<h2>css 문법</h2>
+		선택자 {속성:속성값;}
+	</div>  
+
+	<h2>css 대표 선택자 3가지</h2>
+	<ul>
+		<li><b class="nv">tag 선택자</b> - tag명을 그대로 선택자로 활용</li>
+		<li><b class="nv">id 선택자</b> - tag 에 id 를 추가하고 id 값을 선택자(#id)로 활용</li>
+		<li><b class="nv">class 선택자</b> - tag에 class를 추가하고 class값을 선택자(.class)로 활용</li>
+	</ul>
+	
+	<p style="padding-left: 2em; color: #137";>
+	(* = 전체선택자)
+	</p>
+	
+	<h2>css 적용방식 3가지</h2>
+	<ul>
+		<li class="bg-gr pd01"><b class="nv">External CSS</b> - 외부 스타일 소스가 별개의 파일로 존재 웹문서와 연결해서 적용
+		스타일 소스가 외부 파일론 존재
+		head 에 link 태그로 href 속성을 사용하여 불러옴
+<!-- 	<link href="basic.css" rel="stylesheet"/> -->
+		</li>
+		<li class="bg-bl pd01"><b class="nv">Internal CSS</b> - 내부 . 내부파일 방식 스타일 소스가 웹 문서의 head 내에 존재
+		스타일 소스가 웹문서의 head 내에 (style type="text/css" ... /style)존재
+		스타일 내용이 페이지에 종속적임</li>
+		<li class="pd01" style="background-color: #f85844; color: #fff;"><b class="nv">Inline CSS</b> - 일라인 방식 스타일 소스가 태그 바로 뒤에 존재. 코드가 길어지고 통일성 저해 적용
+			우선순위가 세 방식중 가장 높음</li>
+	</ul>
+
+
+	<h2>css 적용방식 3가지</h2>
+</body>
+</html>

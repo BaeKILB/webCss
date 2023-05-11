@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Display</title>
+<link href="../style.css" rel="styleSheet">
+<link href="../display/display.css" rel="styleSheet">
+</head>
+<body>
+	<nav>
+		<ul>
+			<li><a href="#sec01">sec01</a></li>
+			<li><a href="#sec02">sec02</a></li>
+			<li><a href="#sec03">sec03</a></li>
+			<li><a href="#sec04" id="nm03">sec04</a>
+			
+			<ul id="sub">
+				<li><a href="#">sub01</a></li>
+				<li><a href="#">sub02</a></li>
+			</ul>
+			</li>
+		</ul>
+	</nav>
+	<h1>display</h1>
+	요소가 화면에 나타나는 방식(성격) 을 지정
+	<ul class="ul01">
+		<li>display:inline; block인 요소를 inline 으로 지정</li>
+		<li>display:block; inline인 요소를 block으로 지정</li>
+		<li>display:inline-block ; 어떤 요소나 둘을 합친 방식을 지정</li>
+		<li>display:none ; 화면에서 사라짐 <b class="b01">영역과 함께</b> </li>
+	</ul>
+	
+	inline 요소 - 크기, 상하 설정 적용이 불가함
+	한 줄에 나란히 옴 <br>
+	block 요소 - 크기, 상하 margin 적용 가능
+	한줄에 나란히 못 옴 <br>
+	inline-block 요소 - 크기 상하 margin 설정 적용이 가능하나
+	한 줄에 나란히 옴
+	<section id="sec01">
+		<h2>display:inline;</h2>
+		
+		<p>p tag</p>
+		<div>div tag</div>
+		<article>article tag</article>
+	</section>
+	<section id="sec02">
+		<h2>display:block;</h2>
+		<p>p tag</p>
+		<div class="dn01">div tag</div>
+		<article>article tag</article>
+	</section>
+	
+	<section id="sec03">
+		<h2>display:inline-block;</h2>
+		
+		<p>p tag</p>
+		<div>div tag</div>
+		<article>article tag</article>
+	
+		<p>p tag</p>
+		<div>div tag</div>
+		<article>article tag</article>
+	</section>
+	
+		
+	<section id="sec04">
+		<h2>4. display:<i>흔적도 없이</i> none;</h2>
+		
+		<p>p tag</p>
+		<div class="dn01">div tag</div>
+		<article>article tag</article>
+	
+		<aside class="dn03">aside tag</aside>
+	
+		<p class="dn02">p tag</p>
+		<b>b tag</b>
+		<label class="dn04">label tag</label>
+	</section>
+	
+	<section id="sec05">
+		<h2>5. visibility : hidden</h2>
+		<p>p tag</p>
+		<div class="vh01">div tag</div>
+		<article>article tag</article>
+		
+		<a class="vh02">a tag</a>
+		<b>b tag</b>
+		<label class="vh04">label tag</label>
+		
+	</section>
+	
+	
+</body>
+</html>

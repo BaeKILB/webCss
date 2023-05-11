@@ -1,0 +1,93 @@
+@charset "UTF-8";
+#pd01 > li{ border: 1px solid #090;}
+
+.pt {
+	padding-top: 30px;
+}
+.pr{
+	text-align: right;
+	padding-right: 30px;
+}
+.pb{
+	
+	padding-bottom: 30px;
+}
+.pl{
+		
+	padding-left: 20%;
+}
+
+#pd02 > li{ border: 1px solid #090;
+width : 130px}
+
+.pdn01{
+	padding: 3em;
+}
+.pdn02{
+	padding: 0 3em;
+}
+.pdn03{
+	padding: 3em 0 1em;
+}
+.pdn04{
+	padding: 2em 20% 1.5em 10%;
+}
+
+/* pg-list */
+
+#pg-list{
+/* 	border: 1px solid #090; */
+	padding-bottom: 2em;
+}
+
+#pg-list>a{
+	background-color: #009;
+	width:30px;
+	height:30px;
+	padding: 4px 10px;
+	color: #fff;
+	text-decoration: none;
+	
+}
+
+#pg-list>a:hover{
+	background-color: #090;
+	color: #fff;
+	transition: 0.2s;
+}
+
+#nm{
+	padding: 0.3em 0.5em;
+}
+#ph>img{
+	width: 300px;
+	margin: 30px;
+}
+.ph01{
+	border: 35px solid #032;
+}
+.ph02{
+	border: 35px solid #032;
+	padding: 50px;
+}
+.ph03{
+	border: 1px solid #032;
+	padding: 10px 10px 100px;
+	border-radius: 2px;
+}
+.ph03:hover{
+	box-shadow: 1px 2px 14px #333;
+	transition: 0.3s;
+}
+
+.ph04{
+	border-radius: 50%;
+}
+
+.ph04:hover{
+	border-radius: 2px;
+	transition: 0.3s;
+}
+.ph04:not(:hover){
+	transition: 0.3s;
+}

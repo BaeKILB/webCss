@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+
+body {
+	background-image: url("../img/forest.jpg") , url("../img/sunrise.jpg") ,url(https://source.unsplash.com/random/?art);
+	background-repeat: no-repeat;
+/* 	background-size: cover; */
+	background-position: left top , left bottom ,right center;
+	background-attachment: fixed; font-size : 1.2rem;
+	line-height: 1.7;
+	font-size: 1.2rem;
+	/*행간(줄간격) 지정*/
+}
+
+#ol02>li {
+	font-weight: bold;
+	color: #333;
+}
+
+#ol02>li>ul {
+	margin-bottom: 1rem;
+	list-style: url("../img/gif/yellowup.gif"); font-size : 1rem;
+	font-weight: normal;
+	color: #000;
+	font-size: 1rem;
+}
+
+#sec01>div { 
+	white-space: pre-line;
+	}
+#sec01>div>b{
+	font-size: 1.5rem;
+}
+
+#sec01>p {
+	border: 2px solid red;
+	width: 500px;
+	height: 400px;
+	padding: 1rem;
+	margin: 1rem;
+	display: inline-block; /* 한 줄에 나란히 배치 */
+	background-size: cover;
+	overflow: scroll;/* 영역바에 스크롤바 생성*/
+}
+
+.at01 {
+	background-attachment: scroll;
+	background-image: url(https://source.unsplash.com/random/?city);
+}
+
+.at02 {
+	background-attachment: fixed;
+	background-image: url(https://source.unsplash.com/random/?Village);
+}
+
+.at03 {
+	background-attachment: local;
+	background-image: url(https://source.unsplash.com/random/?building);
+}

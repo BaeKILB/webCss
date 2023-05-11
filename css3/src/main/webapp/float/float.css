@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+nav ul{
+	border: 1px solid #0d0;
+	list-style: none;
+}
+
+nav li{
+
+	float: left;/*메뉴들을 나란히 배치(가로형 메뉴)*/
+	margin: 2px;
+}
+
+nav a{
+	width:120px;
+	height: 30px;
+	display : block; /*크기 적용을 위해 추가*/
+	text-align:center;
+	text-decoration:none;
+	line-height:30px;
+/* 	행간값 (height) 와 영역높이값을 일치 시켜
+	수직중앙 정렬 함*/
+	
+	
+}
+
+nav a:link , nav a:visited{ /* 평상시 링크 상태 */
+/* 	a 링크 한번도 클릭 안한 태그일때 link
+
+	링크 클릭한 태그일때 visited*/
+	background-color: #fa9;
+	color: #900;
+	
+}
+
+nav a:hover , nav a:active{
+	background-color: #a9f;
+	color: #13a;
+}
+
+
+
+
+.dv{
+	border: 1px solid red;
+	float: left;
+	width: 40%;
+	margin-left: 3%;
+	margin-bottom: 3%;
+}
+
+#sec01 img {
+	float:left;
+	margin: 0.8rem;
+	
+}
+#sec02 img {
+	float:right;
+	margin: 0.8rem;
+	
+}
+
+#sec02 p{
+	text-align: right;
+}
+
+#sec01 ,#sec02 {
+	float:left;
+	width: 40%;
+	overflow: hidden;
+/* 	영역밖의 내용 숨김 처리 
+		=float 으로 줄어든 부모영역 되살림*/
+	
+}
+
+
+.clear{
+	clear:both;
+}
+#sec03 ,#sec04 {
+	overflow: hidden;
+/* 	영역밖의 내용 숨김 처리 
+		=float 으로 줄어든 부모영역 되살림*/
+}
+#sec03>p{
+	border: 1px solid red;
+	width: 500px;
+	float: left;
+	margin-right: 1em;
+}
+
+#sec03>p:first-letter ,#sec04>p:first-letter{
+	font-size: 1.5em;
+	
+}
+
+#sec04>p{
+	border: 1px solid cyan;
+	width:400px;
+	float:right;
+	margin: 1rem;
+}
+
+#sec05>p{
+	border: 1px solid #90f;
+	width: 400px;
+}
+
+.p05{
+	float:left;
+}
+.p06{
+	float:right;
+}
+
+.p07{
+	background-color:#ccc;
+/* 	clear:both; */
+}
+.p07:first-letter{
+	font-size:1.5em;
+	font-weight: bold;
+	color : #00a;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="../basic.css" rel="styleSheet">
+<link href="../style.css" rel="styleSheet">
+<link href="bgimg.css" rel="styleSheet">
+
+</head>
+<body>
+	<h1>background</h1>
+	
+	<ul>
+		<li>background-color: ; 배경 색상
+			<ol>
+				<li>color명</li>
+				<li>rgb(n,n,n)</li>
+				<li>hsl(n,n,n)</li>
+				<li>#nnnnnn</li>
+			</ol>
+		</li>
+		<li>background-image:url("경로") ; 배경 이미지
+		<br> 배경 이미지 두 개 지정은 <b>url("경로1") , url("경로2")</b>로 추가
+		</li>
+	</ul>
+
+	<h2>background-image의 하위속성들: ;</h2>
+	<ol id="ol02">
+		<li>background-repeat: ; 배경이미지 반복 지정
+			<ul>
+				<li>repeat (기본값) 양사방 반복</li>
+				<li>repeat-x 가로로만 반복</li>
+				<li>repeat-y 세로로만 반복</li>
+				<li>no-repeat 반복하지 않음</li>
+			</ul>
+		</li>
+		<li>background-size: ; 배경이미지 크기 지정
+			<ul>
+				<li>cover 이미지 하나로 영역 전체를 다 덮기
+				<br>(이미지가 잘려나갈수도 있음) </li>
+				<li>contain 영역에 이미지 하나를 최대한 다 보이기
+				<br>(이미지가 잘려나가지 않음)</li>
+				<li>Xn Yn <br>
+				가로 세로 위치값을 지정</li>				
+			</ul>
+		</li>
+		<li>background-position: ; 배경이미지 위치 지정
+			<ul>
+				<li>left/center/right top/center/bottom<br>
+				가로 세로 방향값을 조합
+				</li>
+				<li>Xn Yn <br>
+				가로 세로 위치값을 지정
+				</li>
+			</ul>
+		</li>
+		<li>background-attachment: ; 배경이미지 스크롤 여부 지정
+			<ul>
+				<li>scroll</li>
+				<li>fixed</li>
+				<li>local</li>
+			</ul>
+		</li>
+	</ol>
+	
+	<section id="sec01">
+		<h2>background-attachment: ; 배경이미지 스크롤 여부</h2>
+		
+		<div>
+			<b>scroll</b>
+			영역 스크롤바에는 고정,
+			브라우저 스크롤바에는 스크롤
+			
+			<b>fixed</b>
+			영역스크롤바와 브라우저 스크롤바에 모두 고정
+			
+			<b>local </b>
+			영역 스크롤바와 브라우저 스크롤바에 모두 스크롤
+		</div>
+		<p class="at01">
+		background-attachment: scroll; <br><br><br><br><br>
+		background-attachment: scroll; <br><br><br><br><br> 
+		background-attachment: scroll; <br><br><br><br><br>
+		</p>
+		<p class="at02">
+		background-attachment: fixed; <br><br><br><br><br>
+		background-attachment: fixed; <br><br><br><br><br>
+		background-attachment: fixed; <br><br><br><br><br>
+		</p>
+		<p class="at03">
+		background-attachment: local; <br><br><br><br><br>
+		background-attachment: local; <br><br><br><br><br>
+		background-attachment: local; <br><br><br><br><br>
+		</p>
+	</section>
+</body>
+</html>

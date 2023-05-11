@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Padding</title>
+<link href="../style.css" rel="styleSheet">
+<link href="padding.css" rel="styleSheet">
+</head>
+<body>
+	<h1>padding 요소의 내부 여백</h1>
+
+	<h2>1. padding 방향별 저장법</h2>
+	<ul id="pd01">
+		<li class="pt">padding-top: ; 위에만 n 적용</li>
+		<li class="pr">padding-right: ; 우측에만 n 적용</li>
+		<li class="pb">padding-bottom: ; 아래에만 n 적용</li>
+		<li class="pl">padding-left: ; 좌측에만 n 적용</li>
+	</ul>
+
+	<h2>2. padding 값 갯수별 저장법</h2>
+	<ul id="pd02">
+		<li class="pdn01">padding:3em;</li>
+		<li class="pdn02">padding: 0 3em;</li>
+		<li class="pdn03">padding: 3em 0 1em;</li>
+		<li class="pdn04">padding:2em 20% 1.5em 10%;</li>
+	</ul>
+	<nav id="pg-list">
+	<a href="#">1</a>
+	<a href="#">2</a>
+	<a href="#">3</a>
+	<a href="#">4</a>
+	<a href="#">5</a>
+	<a href="#">6</a>
+	<a href="#">7</a>
+	<a href="#">8</a>
+	<a href="#">9</a>
+	<a href="#">10</a>
+	</nav>
+	
+	<form action="test.jsp">
+		<label for="nm">name</label>
+		<input type="text" id="nm">
+		
+		<p id="ph">
+		<img alt="blackbird" src="../img/blackbird.jpg" class="ph01">
+		<img alt="blackbird" src="../img/blackbird.jpg" class="ph02">
+		<img alt="blackbird" src="../img/blackbird.jpg" class="ph03">
+		<img alt="blackbird" src="../img/blackbird.jpg" class="ph04">
+		</p>
+	</form>
+	</body>
+</html>
